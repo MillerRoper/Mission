@@ -1,0 +1,41 @@
+
+h1{ 
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 64px;
+    margin: 0;
+    padding-bottom: 0%;
+}
+
+
+h2{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, Serif;
+    color:  #006EB6
+}
+
+
+
+body{
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 20px;
+    line-height: 1.6;
+    border: 2px solid black;
+    padding: 100px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+img{
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.does-list li{
+    margin-bottom: 20px;
+
+}
