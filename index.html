@@ -5,7 +5,30 @@
 		<title>BYUI Mission Statement</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
+	<body class="'light-theme">
+		<label for="theme-select">Choose a theme</label>
+		<select id="theme-select" name="theme">
+			<option value="light" selected>light</option>
+			<option value="dark">Dark</option>
+		</select>
+		<script>
+			const themeSelect = document.getElementById('theme-select');
+			const body =document.body;
+
+			themeSelect.addEventListener('change', function() {
+				const selectedTheme = themeSelect.value;
+
+				if (selectedTheme === 'light') {
+					body.classList.remove('dark-theme');
+					body.classList.add('light-theme');
+				} else if (selectedTheme === 'dark') {
+					body.classList.remove('light-theme');
+					body.classList.add('dark-theme');
+				}
+
+			});
+		</script>
+
 		<div class="content">
 			<header class="title">
 				<h1>MISSION STATEMENT</h1>
