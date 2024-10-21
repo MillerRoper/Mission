@@ -1,0 +1,31 @@
+.back-link {
+    display: inline-block;
+    margin-top: 1em;
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  .recipe-details {
+    padding: 2em;
+  }
+  
+  .recipe-details h2 {
+    margin-top: 1.5em;
+    color: #333;
+  }
+  
+  #ingredients-list, #directions-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #ingredients-list li, #directions-list li {
+    margin: 0.5em 0;
+    line-height: 1.5;
+  }
+
+  

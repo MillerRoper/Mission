@@ -1,6 +1,14 @@
-const helloElement = document.getElementById('hello')
+const PI = 3.14;
+// let radius = 3;
+let area = 0;
 
-helloElement.innerText = 'Hello World!'
+function circleArea(radius) {
+  const area = radius * radius * PI;
+  return area;
+}
 
-const hello2element = document.getElementById('hello2')
-hello2element.innerText = 'Hello world!'
+area = circleArea(3);
+console.log("Area1:", area);
+// radius = 4;
+area = circleArea(4);
+console.log("Area2:", area);

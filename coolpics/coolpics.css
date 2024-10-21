@@ -1,43 +1,70 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
-
+body{
+    margin: 0px;
+    overflow-x:hidden;
+}
 nav {
-    font-family: 'Mooli', sans-serif; 
+    font-family: 'Mooli', sans-serif;
     text-align: center;
     color: white;
     background-color: blueviolet;
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 ul {
     font-family: 'Mooli', sans-serif;
     list-style: none;
-    display:flex;
+    display: flex;
     gap: 10px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-h3{
+/* Show menu items by default on larger screens */
+ul {
+    display: flex;
+}
+
+/* Hide menu items on small screens */
+.hide {
+    display: none;
+}
+
+ul li {
+    padding: 5px 10px; /* Add padding for better touch targets */
+}
+
+a{
+    color: white;
+}
+
+h3 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-img{
+.gallery img {
     max-width: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
-figure{
+figure {
     width: 100%;
     height: 100%;
 }
 
-section{
-    display:grid;
+section {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
@@ -45,24 +72,100 @@ section{
     height: 100%;
 }
 
-/* @media screen and (min-width: 700px) {
-    .gallery{
-        grid-template-columns: 1fr,1fr
-    }
-} */
+/* Styling for menu button */
+#menuButton {
+    display: none;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
+#menuButton:focus {
+    outline: 2px solid orange; /* Add focus outline for accessibility */
+}
+
+.viewer {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Ensures it appears above other content */
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Transition for smooth appearance */
+}
+
+.close-viewer {
+    color: white; /* Change X color for visibility */
+    background: transparent; /* Transparent background for the button */
+    border: none;
+    font-size: 24px; /* Increase size for better visibility */
+    cursor: pointer;
+    align-self: start; /* Align to the top */
+    margin: 10px; /* Add some spacing */
+    position:absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.viewer img {
+    max-width: 90%; /* Slightly larger than original */
+    max-height: 90%; /* Prevents the image from being too tall */
+    object-fit: contain; /* Ensures the image maintains aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for size */
+}
+
+
+
+/* Make gallery responsive */
 @media (max-width: 600px) {
-    section{
-        grid-template-columns: 1fr;
+    section {
+        grid-template-columns: 1fr; /* Single column for mobile */
     }
 
-    ul{
-        flex-direction: column;
+    ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: flex-start; /* Align items to start for better appearance */
+        display: none; /* Hide by default on small screens */
+    }
+
+    /* Show menu button on small screens */
+    #menuButton {
+        display: block;
+    }
+
+    /* Show menu items when button is clicked */
+    ul.show {
+        display: flex; /* Show menu items when toggled */
+    }
+
+    .viewer{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
     }
 }
 
+/* Adjust gallery layout for medium screens */
 @media (max-width: 1000px) and (min-width: 600px) {
     section {
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+
+    .viewer{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
     }
 }
+

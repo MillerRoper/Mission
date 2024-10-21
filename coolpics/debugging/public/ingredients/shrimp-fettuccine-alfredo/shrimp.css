@@ -1,0 +1,63 @@
+S/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  /* Back link styles */
+  .back-link {
+    display: inline-block;
+    margin-top: 1em;
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Recipe details section */
+  .recipe-details {
+    padding: 2em;
+  }
+  
+  .recipe-details h2 {
+    margin-top: 1.5em;
+    color: #333;
+  }
+  
+  /* Ingredients and Directions lists */
+  #ingredients-list, #directions-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #ingredients-list li, #directions-list li {
+    margin: 0.5em 0;
+    line-height: 1.5;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
