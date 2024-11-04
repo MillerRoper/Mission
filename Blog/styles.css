@@ -1,0 +1,101 @@
+header h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px 0px;
+
+}
+
+main{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+    border: solid 1px gold;
+    padding: 15px;
+    padding-right: 80px;
+    gap:20px;
+
+
+}
+
+nav a{
+    color: #9c3054;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.container {
+    display: grid;
+    height: 100%;
+}
+.book-info {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    text-align: right;
+    font-size: 25px;
+    border-right: 1px solid gold;
+}
+.book-image {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #9c3054;
+}
+
+h3 {
+    text-align: left;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 60px;
+}
+
+book-info p {
+
+    margin: 5px 0; /* Add some space between the paragraphs */
+    margin-bottom: 100px;
+
+}
+
+.separator {
+    width: 1px; /* Width of the separator line */
+    background-color: gold; /* Color of the line */
+    margin: 0 10px; /* Space around the separator */
+}
+
+h4{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #9c3054;
+}
+
+.spaced {
+    margin: 5px 0; /* Add some space between the paragraphs */
+    margin-top: 30px;
+}
+
+.book{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.book-main{
+    padding: 20px;
+}
+
+.filters{
+    border: 1px solid gold;
+    padding: 20px;
+    margin-top: 40px;
+}
