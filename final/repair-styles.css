@@ -1,0 +1,195 @@
+/* Light Mode (Default) Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    padding-bottom: 20px;
+}
+
+.dark-mode .logo {
+    /* background-color: #444; */
+    color: #f0f0f0;
+}
+
+.logo-text {
+    color: #888;
+    transition: color 0.3s;
+}
+
+.dark-mode .logo-text {
+    color: #ddd;
+}
+
+.navigation {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .navigation {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.nav-link {
+    margin: 0 15px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.dark-mode .nav-link {
+    color: #ddd;
+}
+
+.content {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.form-container {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.repair-form {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .repair-form {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.dark-mode .form-group label {
+    color: #ddd;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+    background-color: #555;
+    color: #f0f0f0;
+    border-color: #666;
+}
+
+.repair-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #888;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .repair-form button {
+    background-color: #555;
+    color: #f0f0f0;
+    border-color: #ddd;
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box {
+    /* background-color: white; */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .text-box {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.photo-box {
+    background-color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .photo-box {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.dark-mode-toggle {
+    margin-left: 15px;
+    background-color: transparent;
+    border: 1px solid #666;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .dark-mode-toggle {
+    background-color: #555;
+    color: #f0f0f0;
+    border-color: #ddd;
+}
+
+.imacphoto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    justify-content: space-between;
+    padding-top: 100px;
+}
